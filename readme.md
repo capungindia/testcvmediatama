@@ -22,3 +22,5 @@ Secara default ada 3 user dummy pada aplikasi ini yaitu:
 - uname:admin pwd:admin12345 level:admin
 - uname:capung pwd:capung12345 level:customer
 - uname:dummy pwd:dummy12345 level:customer
+
+User level admin memiliki hak akses CRUD (Create, Read, Update, Delete) data customer dan data video, dan bisa memberi akses customer menonton video. User level Customer memiliki akses request menonton video, dan menonton video yang telah disetujui admin. Admin menkonfirmasi permintaan akses video dengan skala waktu terbatas (contoh : customer a diberi akses video 1 selama 2 jam saja). Customer melihat video sesuai tenggang waktu yang diberikan. Saat waktu habis customer bisa meminta akses ulang ke admin.
